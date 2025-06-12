@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox } from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload } from "lucide-react";
 
 import {
   Sidebar,
@@ -19,19 +19,29 @@ const items = [
     icon: Home,
   },
   {
-    title: "Accordion",
-    url: "/accordion",
+    title: "Tab",
+    url: "/tab",
+    icon: Table,
+  },
+  {
+    title: "Social",
+    url: "/social",
     icon: Inbox,
   },
   {
-    title: "Button",
-    url: "/button",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "/calendar",
+    title: "Counter",
+    url: "/counter",
     icon: Calendar,
+  },
+  {
+    title: "Navbar",
+    url: "/navbar",
+    icon: Navigation,
+  },
+  {
+    title: "File Upload",
+    url: "/file-upload",
+    icon: Upload,
   },
 ];
 
