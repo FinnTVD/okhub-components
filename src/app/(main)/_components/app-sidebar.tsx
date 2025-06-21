@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload } from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles } from "lucide-react";
 
 import {
   Sidebar,
@@ -42,6 +42,11 @@ const items = [
     title: "File Upload",
     url: "/file-upload",
     icon: Upload,
+  },
+  {
+    title: "Animated Content",
+    url: "/animated-content",
+    icon: Sparkles,
   },
 ];
 
