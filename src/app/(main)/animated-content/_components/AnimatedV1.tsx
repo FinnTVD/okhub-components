@@ -5,7 +5,7 @@ import GsapEasingTable from "@/components/ui/GsapEasingTable";
 
 export default function AnimatedV1() {
   return (
-    <div className="">
+    <div>
       <AnimatedContentController />
       <AnimatedContentPropsTable />
       <GsapEasingTable />

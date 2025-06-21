@@ -8,18 +8,21 @@ export default function IndexCounter() {
   return (
     <Tabs defaultValue="v1" className="w-full">
       <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="v1">V1</TabsTrigger>
-        <TabsTrigger value="v2">V2</TabsTrigger>
+        <TabsTrigger value="v1">Fade-Out</TabsTrigger>
+        <TabsTrigger value="v2">Fade-In</TabsTrigger>
       </TabsList>
       <TabsContent value="v1">
-        <AnimatedV1 />
+        Donate để mình có động lực làm nhiều hơn nữa
       </TabsContent>
       <TabsContent value="v2">
-        <CodeBlock
-          language="tsx"
-          filename="AnimatedV1.tsx"
-          code={animatedV1Code}
-        />
+        <div className="grid grid-cols-2 ">
+          <AnimatedV1 />
+          <CodeBlock
+            language="tsx"
+            filename="AnimatedV1.tsx"
+            code={animatedV1Code}
+          />
+        </div>
       </TabsContent>
     </Tabs>
   );

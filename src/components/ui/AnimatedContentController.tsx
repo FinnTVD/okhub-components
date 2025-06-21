@@ -3,7 +3,6 @@
 import { useState } from "react";
 import AnimatedContent from "@/components/ui/animated-content";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { Sparkles, Settings, Play } from "lucide-react";
 
 export default function AnimatedContentController() {
@@ -81,7 +80,7 @@ export default function AnimatedContentController() {
   ];
 
   return (
-    <div className="container mx-auto p-6 space-y-8">
+    <div className=" mx-auto p-6 space-y-8 w-full h-fit">
       {/* Header */}
       <div className="text-center space-y-4">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -91,10 +90,8 @@ export default function AnimatedContentController() {
           Tùy chỉnh animation parameters và xem kết quả real-time
         </p>
       </div>
-
-      <Separator />
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    
+      <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
         {/* Demo Area */}
         <div className="space-y-4">
           <div className="flex items-center gap-2">
