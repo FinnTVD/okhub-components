@@ -18,6 +18,7 @@ interface AnimatedContentProps {
   threshold?: number;
   delay?: number;
   onComplete?: () => void;
+  showCopyButton?: boolean;
 }
 
 const AnimatedContent: React.FC<AnimatedContentProps> = ({
@@ -33,8 +34,31 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
   threshold = 0.1,
   delay = 0,
   onComplete,
+  showCopyButton = false,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
+
+  const copyCode = () => {
+    const code = `<AnimatedContent
+  distance={${distance}}
+  direction="${direction}"
+  reverse={${reverse}}
+  duration={${duration}}
+  ease="${ease}"
+  initialOpacity={${initialOpacity}}
+  animateOpacity={${animateOpacity}}
+  scale={${scale}}
+  threshold={${threshold}}
+  delay={${delay}}
+>
+  {/* Your content here */}
+</AnimatedContent>`;
+    
+    navigator.clipboard.writeText(code).then(() => {
+      // Có thể thêm toast notification ở đây
+      console.log('Code copied!');
+    });
+  };
 
   useEffect(() => {
     const el = ref.current;
@@ -84,7 +108,19 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
     onComplete,
   ]);
 
-  return <div ref={ref}>{children}</div>;
+  return (
+    <div className="relative">
+      {showCopyButton && (
+        <button
+          onClick={copyCode}
+          className="absolute top-2 right-2 z-10 px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+        >
+          Copy Code
+        </button>
+      )}
+      <div ref={ref}>{children}</div>
+    </div>
+  );
 };
 
 export default AnimatedContent;

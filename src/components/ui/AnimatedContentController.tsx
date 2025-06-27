@@ -3,7 +3,7 @@
 import { useState } from "react";
 import AnimatedContent from "@/components/ui/animated-content";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Settings, Play } from "lucide-react";
+import { Sparkles, Settings, Play, Copy, Check } from "lucide-react";
 
 export default function AnimatedContentController() {
   const [direction, setDirection] = useState<"horizontal" | "vertical">(
@@ -18,6 +18,7 @@ export default function AnimatedContentController() {
   const [initialOpacity, setInitialOpacity] = useState(0.6);
   const [scale, setScale] = useState(1);
   const [threshold, setThreshold] = useState(0.1);
+  const [copied, setCopied] = useState(false);
 
   const easingFunctions = [
     // Power functions
@@ -78,6 +79,33 @@ export default function AnimatedContentController() {
     { value: "steps(10)", label: "steps(10)" },
     { value: "steps(20)", label: "steps(20)" },
   ];
+
+  const generateCode = () => {
+    return `<AnimatedContent
+  distance={${distance}}
+  direction="${direction}"
+  reverse={${reverse}}
+  duration={${duration}}
+  ease="${ease}"
+  initialOpacity={${initialOpacity}}
+  animateOpacity={${animateOpacity}}
+  scale={${scale}}
+  threshold={${threshold}}
+  delay={${delay}}
+>
+  {/* Your content here */}
+</AnimatedContent>`;
+  };
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(generateCode());
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
 
   return (
     <div className=" mx-auto p-6 space-y-8 w-full h-fit">
@@ -297,6 +325,36 @@ export default function AnimatedContentController() {
                 onChange={(e) => setThreshold(Number(e.target.value))}
                 className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer slider"
               />
+            </div>
+          </div>
+
+          {/* Code Preview */}
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium">Generated Code</label>
+              <Button
+                onClick={handleCopy}
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2"
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-4 h-4 text-green-500" />
+                    Copied!
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-4 h-4" />
+                    Copy Code
+                  </>
+                )}
+              </Button>
+            </div>
+            <div className="relative">
+              <pre className="bg-muted p-4 rounded-lg text-sm overflow-x-auto border">
+                <code>{generateCode()}</code>
+              </pre>
             </div>
           </div>
         </div>
