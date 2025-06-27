@@ -17,7 +17,7 @@ export default function IndexForm() {
       <TabsContent value="v1">
         <div className="grid grid-cols-2">
           <div className="h-screen w-full flex justify-center items-center">
-            <div className="w-[50%]">
+            <div className="w-[50%] sticky top-0">
               <FormSignIn />
             </div>
           </div>
