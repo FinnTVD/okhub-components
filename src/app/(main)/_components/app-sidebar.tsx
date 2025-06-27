@@ -1,15 +1,4 @@
 import {
-  Calendar,
-  Home,
-  Inbox,
-  Table,
-  Navigation,
-  Upload,
-  Sparkles,
-  FolderInput,
-  FolderCode,
-} from "lucide-react";
-import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
@@ -19,6 +8,18 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+
+import {
+  Calendar,
+  FolderInput,
+  Home,
+  Inbox,
+  Navigation,
+  Sparkles,
+  Table,
+  Upload,
+  FolderCode,
+} from "lucide-react";
 
 // Menu items.
 const items = [
@@ -60,6 +61,11 @@ const items = [
   {
     title: "Form",
     url: "/form",
+    icon: FolderInput,
+  },
+  {
+    title: "Slider",
+    url: "/slider",
     icon: FolderInput,
   },
   {
