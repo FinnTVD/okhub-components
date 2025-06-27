@@ -1,3 +1,4 @@
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,ArrowUp } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
