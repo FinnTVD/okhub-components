@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput } from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,ArrowUp } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -51,6 +51,11 @@ const items = [
     title: "Form",
     url: "/form",
     icon: FolderInput,
+  },
+  {
+    title: "Count Up",
+    url: "/countup",
+    icon: ArrowUp,
   },
 ];
 
