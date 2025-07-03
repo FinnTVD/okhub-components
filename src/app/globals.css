@@ -6,9 +6,20 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Custom slider styles */
+  .slider {
+    @apply appearance-none bg-gray-700 outline-none rounded-lg cursor-pointer;
+  }
+
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 rounded-full bg-green-500 cursor-pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    @apply w-5 h-5 rounded-full bg-green-500 cursor-pointer border-none;
+  }
 }
-
-
 
 @layer base {
   :root {
@@ -81,8 +92,6 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
-
-
 
 @layer base {
   * {

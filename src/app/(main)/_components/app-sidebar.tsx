@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,ArrowUp } from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput, FolderCode } from 'lucide-react'
 import {
   Sidebar,
   SidebarContent,
@@ -8,73 +8,66 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar";
-
-import {
-  Calendar,
-  FolderInput,
-  Home,
-  Inbox,
-  Navigation,
-  Sparkles,
-  Table,
-  Upload,
-  FolderCode,
-} from "lucide-react";
+} from '@/components/ui/sidebar'
 
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "/",
+    title: 'Home',
+    url: '/',
     icon: Home,
   },
   {
-    title: "Tab",
-    url: "/tab",
+    title: 'Tab',
+    url: '/tab',
     icon: Table,
   },
   {
-    title: "Social",
-    url: "/social",
+    title: 'Social',
+    url: '/social',
     icon: Inbox,
   },
   {
-    title: "Counter",
-    url: "/counter",
+    title: 'Counter',
+    url: '/counter',
     icon: Calendar,
   },
   {
-    title: "Navbar",
-    url: "/navbar",
+    title: 'Navbar',
+    url: '/navbar',
     icon: Navigation,
   },
   {
-    title: "File Upload",
-    url: "/file-upload",
+    title: 'File Upload',
+    url: '/file-upload',
     icon: Upload,
   },
   {
-    title: "Animated Content",
-    url: "/animated-content",
+    title: 'Animated Content',
+    url: '/animated-content',
     icon: Sparkles,
   },
   {
-    title: "Form",
-    url: "/form",
+    title: 'Form',
+    url: '/form',
     icon: FolderInput,
   },
   {
-    title: "Slider",
-    url: "/slider",
+    title: 'Slider',
+    url: '/slider',
     icon: FolderInput,
   },
   {
-    title: "Form Builder",
-    url: "/form-builder",
+    title: 'Form Builder',
+    url: '/form-builder',
     icon: FolderCode,
   },
-];
+  {
+    title: 'Text animation',
+    url: '/text-animation',
+    icon: Sparkles,
+  },
+]
 
 export default function AppSidebar() {
   return (
@@ -99,5 +92,5 @@ export default function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  );
+  )
 }
