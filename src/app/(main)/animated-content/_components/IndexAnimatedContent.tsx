@@ -8,13 +8,10 @@ export default function IndexCounter() {
   return (
     <Tabs defaultValue="v1" className="w-full">
       <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="v1">V1</TabsTrigger>
-        <TabsTrigger value="v2">Animation</TabsTrigger>
+        <TabsTrigger value="v1">Animation Controller</TabsTrigger>
+        <TabsTrigger value="v2">V2</TabsTrigger>
       </TabsList>
       <TabsContent value="v1">
-        Donate để mình có động lực làm nhiều hơn nữa
-      </TabsContent>
-      <TabsContent value="v2">
         <div className="grid grid-cols-2 ">
           <AnimatedV1 />
           <CodeBlock
@@ -23,6 +20,9 @@ export default function IndexCounter() {
             code={animatedV1Code}
           />
         </div>
+      </TabsContent>
+      <TabsContent value="v2">
+        <div className="grid grid-cols-2 "></div>
       </TabsContent>
     </Tabs>
   );
