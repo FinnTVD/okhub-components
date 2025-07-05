@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import exampleGeoJsonData from "./custom.geo.json";
+import exampleGeoJsonData from "@/components/InteractiveMap/custom.geo.json";
 import InteractiveMap, {
   CityData,
   MapConfig,
   MapStyle,
-} from "./InteractiveMap";
+} from "@/components/InteractiveMap/InteractiveMap";
 import type { GeoJsonObject } from "geojson";
 // Example city data
 const exampleCityList: CityData[] = [
@@ -53,7 +53,7 @@ const customStyle: MapStyle = {
   selectedFillOpacity: 1,
 };
 
-const MapExample: React.FC = () => {
+export default function IndexInteractiveMap() {
   const [selectedCity, setSelectedCity] = useState<CityData | null>(null);
   const [zoomIn, setZoomIn] = useState(0);
   const [zoomOut, setZoomOut] = useState(0);
@@ -136,6 +136,4 @@ const MapExample: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default MapExample;
+}

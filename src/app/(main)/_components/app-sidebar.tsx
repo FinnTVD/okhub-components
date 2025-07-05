@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,FolderCode } from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,FolderCode, Map } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -62,6 +62,11 @@ const items = [
     title: "Form Builder",
     url: "/form-builder",
     icon: FolderCode,
+  },
+  {
+    title: "Interactive Map",
+    url: "/leaflet-map",
+    icon: Map,
   },
 ];
 

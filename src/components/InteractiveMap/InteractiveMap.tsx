@@ -17,6 +17,8 @@ const GeoJSON = dynamic(
   {ssr: false},
 )
 
+
+
 // Types
 export interface CityData {
   value: string
@@ -161,7 +163,13 @@ const InteractiveMap: React.FC<InteractiveMapProps> = ({
     setMounted(true)
   }, [])
 
-  if (!mounted) return null
+  if (!mounted) {
+    return (
+      <div className={`w-full h-full bg-gray-100 flex items-center justify-center ${className}`}>
+        <div className="text-gray-500">Loading map...</div>
+      </div>
+    )
+  }
 
   // Default style
   const defaultStyle: MapStyle = {
