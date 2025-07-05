@@ -1,13 +1,4 @@
-import {
-  Calendar,
-  Home,
-  Inbox,
-  Table,
-  Navigation,
-  Upload,
-  Sparkles,
-  FolderInput,
-} from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,FolderCode, Map } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -65,6 +56,16 @@ const items = [
     title: "Slider",
     url: "/slider",
     icon: FolderInput,
+  },
+  {
+    title: "Form Builder",
+    url: "/form-builder",
+    icon: FolderCode,
+  },
+  {
+    title: "Interactive Map",
+    url: "/leaflet-map",
+    icon: Map,
   },
 ];
 
