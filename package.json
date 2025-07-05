@@ -33,6 +33,7 @@
     "react-leaflet": "^5.0.0",
     "react-syntax-highlighter": "^15.6.1",
     "sonner": "^2.0.5",
+    "split-type": "^0.3.4",
     "swiper": "^11.2.8",
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7",
