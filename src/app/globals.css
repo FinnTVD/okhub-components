@@ -101,3 +101,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Leaflet CSS fixes */
+.leaflet-container {
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 8px 12px;
+  font-family: inherit;
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+.leaflet-popup-close-button {
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #333;
+}

@@ -1,4 +1,5 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput, FolderCode } from 'lucide-react'
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput, FolderCode, Map } from "lucide-react";
+
 import {
   Sidebar,
   SidebarContent,
@@ -8,7 +9,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from '@/components/ui/sidebar'
+} from "@/components/ui/sidebar";
 
 // Menu items.
 const items = [
@@ -68,6 +69,11 @@ const items = [
     icon: Sparkles,
   },
 ]
+    title: "Interactive Map",
+    url: "/leaflet-map",
+    icon: Map,
+  },
+];
 
 export default function AppSidebar() {
   return (
