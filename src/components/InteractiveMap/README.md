@@ -1,7 +1,7 @@
 # InteractiveMap Component
 
 Component map tương tác có thể tái sử dụng cho nhiều dự án, được xây dựng trên Leaflet và React.
-
+Link download geo-json : https://gadm.org/download_country.html
 ## 📁 Cấu trúc
 
 ```
