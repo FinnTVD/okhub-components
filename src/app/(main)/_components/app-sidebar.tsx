@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,ArrowUp } from "lucide-react";
+import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,FolderCode } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -10,17 +10,6 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-import {
-  Calendar,
-  FolderInput,
-  Home,
-  Inbox,
-  Navigation,
-  Sparkles,
-  Table,
-  Upload,
-  FolderCode,
-} from "lucide-react";
 
 // Menu items.
 const items = [
