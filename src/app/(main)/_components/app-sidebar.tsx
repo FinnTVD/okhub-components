@@ -68,7 +68,7 @@ const items = [
     url: '/text-animation',
     icon: Sparkles,
   },
-]
+  {
     title: "Interactive Map",
     url: "/leaflet-map",
     icon: Map,
