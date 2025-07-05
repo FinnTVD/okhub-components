@@ -1,4 +1,14 @@
-import { Calendar, Home, Inbox, Table, Navigation, Upload, Sparkles, FolderInput,ArrowUp } from "lucide-react";
+import {
+  Calendar,
+  Home,
+  Inbox,
+  Table,
+  Navigation,
+  Upload,
+  Sparkles,
+  FolderInput,
+  FolderCode,
+} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -9,18 +19,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-
-import {
-  Calendar,
-  FolderInput,
-  Home,
-  Inbox,
-  Navigation,
-  Sparkles,
-  Table,
-  Upload,
-  FolderCode,
-} from "lucide-react";
 
 // Menu items.
 const items = [
@@ -73,6 +71,11 @@ const items = [
     title: "Form Builder",
     url: "/form-builder",
     icon: FolderCode,
+  },
+  {
+    title: "Tab V2",
+    url: "/tab-v2",
+    icon: Table,
   },
 ];
 
