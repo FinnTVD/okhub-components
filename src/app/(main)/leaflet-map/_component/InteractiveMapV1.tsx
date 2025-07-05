@@ -1,6 +1,6 @@
 "use client";
 
-import IndexInteractiveMapV1 from "@/app/(main)/leaflet-map/_component/IndexInteractiveMap";
+import IndexInteractiveMapV1, { MapExampleString } from "@/app/(main)/leaflet-map/_component/IndexInteractiveMap";
 import Iframe from "@/components/customs/Iframe";
 import { CodeBlock } from "@/components/ui/code-block";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -21,15 +21,7 @@ export default function IndexInteractiveMap() {
           <CodeBlock
             language="jsx"
             filename="MapExample.jsx"
-            code={`import MapExample from "@/components/InteractiveMap/MapExample";
-
-export default function LeafletMapDemo() {
-  return (
-    <div className="h-screen w-full">
-      <IndexInteractiveMapV1 />
-    </div>
-  );
-}`}
+            code={MapExampleString}
           />
         </div>
       </TabsContent>
