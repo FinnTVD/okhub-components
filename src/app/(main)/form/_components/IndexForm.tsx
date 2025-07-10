@@ -26,8 +26,8 @@ export default function IndexForm() {
             </div>
           </div>
           <CodeBlock
-            language="jsx"
-            filename="FormSignIn.jsx"
+            language="tsx"
+            filename="FormSignIn.tsx"
             code={FormSignInCode}
           />
         </div>
@@ -40,8 +40,8 @@ export default function IndexForm() {
             </div>
           </div>
           <CodeBlock
-            language="jsx"
-            filename="FormSignUp.jsx"
+            language="tsx"
+            filename="FormSignUp.tsx"
             code={FormSignUpCode}
           />
         </div>
@@ -56,7 +56,7 @@ export default function IndexForm() {
               <Example />
             </div>
           </div>
-          <CodeBlock language="jsx" filename="Example.jsx" code={ExampleCode} />
+          <CodeBlock language="tsx" filename="Example.tsx" code={ExampleCode} />
         </div>
       </TabsContent>
     </Tabs>
