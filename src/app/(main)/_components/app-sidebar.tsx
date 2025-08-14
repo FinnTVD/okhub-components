@@ -90,6 +90,11 @@ const items = [
     url: "/scroll",
     icon: ScrollIcon,
   },
+  {
+    title: "Clip Path",
+    url: "/clip-path",
+    icon: Sparkles,
+  },
 ];
 
 export default function AppSidebar() {
