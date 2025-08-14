@@ -1,12 +1,15 @@
 "use client";
-import { CardClipPathCode } from "@/app/(main)/clip-path/_components/CardClipPath";
-import HoverThumbnail from "@/app/(main)/clip-path/_components/HoverThumbnail";
+import { CardClipPathCode } from "@/app/(main)/clip-path/_components/v1/CardClipPath";
+import HoverThumbnail from "@/app/(main)/clip-path/_components/v1/HoverThumbnail";
+import ScrollClipPath from "@/app/(main)/clip-path/_components/v2/ScrollClipPath";
 import { CodeBlock } from "@/components/ui/code-block";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 export default function IndexClipPath() {
   return (
-    <Tabs defaultValue="v1" className="w-full">
+    <Tabs defaultValue="v2" className="w-full">
       <TabsList className="grid w-full grid-cols-2">
+        <TabsTrigger value="v2">Scroll</TabsTrigger>
         <TabsTrigger value="v1">Thumbnail</TabsTrigger>
       </TabsList>
       <TabsContent value="v1">
@@ -22,6 +25,9 @@ export default function IndexClipPath() {
             </div>
           </div>
         </div>
+      </TabsContent>
+      <TabsContent value="v2">
+        <ScrollClipPath />
       </TabsContent>
     </Tabs>
   );

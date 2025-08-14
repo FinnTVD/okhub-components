@@ -1,4 +1,4 @@
-import CardClipPath from "@/app/(main)/clip-path/_components/CardClipPath";
+import CardClipPath from "@/app/(main)/clip-path/_components/v1/CardClipPath";
 
 export default function HoverThumbnail() {
   return (
