@@ -7,6 +7,7 @@ import scrollToElementNoGsap, {
   scrollToElementNoGsapCode,
 } from "@/app/(main)/scroll/_components/scrollToElementNoGsap";
 import { scrollToSection } from "@/app/(main)/scroll/_components/scrollToSection";
+import ScrollDrivenLayout from "@/app/(main)/scroll/_components/v3/ScrollDrivenLayout";
 import { Button } from "@/components/ui/button";
 import { CodeBlock } from "@/components/ui/code-block";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -16,13 +17,16 @@ import { useState } from "react";
 export default function IndexScroll() {
   const [open, setOpen] = useState(false);
   return (
-    <Tabs defaultValue="v1" className="w-full">
-      <TabsList className="grid w-full grid-cols-2">
+    <Tabs defaultValue="v3" className="w-full">
+      <TabsList className="grid w-full grid-cols-3">
         <TabsTrigger value="v1">
           Scroll to element in container With Gsap
         </TabsTrigger>
         <TabsTrigger value="v2">
           Scroll to element in container No Gsap
+        </TabsTrigger>
+        <TabsTrigger value="v3">
+          Scroll-Driven Layout Glides Cards On The Fly
         </TabsTrigger>
       </TabsList>
       <TabsContent value="v1">
@@ -168,6 +172,9 @@ export default function IndexScroll() {
             code={example1Code}
           />
         </div>
+      </TabsContent>
+      <TabsContent value="v3">
+        <ScrollDrivenLayout />
       </TabsContent>
     </Tabs>
   );
