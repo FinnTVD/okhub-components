@@ -17,7 +17,7 @@ import { useState } from "react";
 export default function IndexScroll() {
   const [open, setOpen] = useState(false);
   return (
-    <Tabs defaultValue="v3" className="w-full">
+    <Tabs defaultValue="v1" className="w-full">
       <TabsList className="grid w-full grid-cols-3">
         <TabsTrigger value="v1">
           Scroll to element in container With Gsap
