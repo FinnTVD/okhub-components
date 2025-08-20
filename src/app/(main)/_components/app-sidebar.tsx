@@ -1,5 +1,4 @@
 import {
-  Calendar,
   Home,
   Inbox,
   Table,
@@ -10,6 +9,10 @@ import {
   FolderCode,
   Map,
   ScrollIcon,
+  AlignVerticalDistributeCenter,
+  GalleryHorizontal,
+  ArrowUp10,
+  LoaderCircle,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -44,7 +47,7 @@ const items = [
   {
     title: "Counter",
     url: "/counter",
-    icon: Calendar,
+    icon: ArrowUp10,
   },
   {
     title: "Navbar",
@@ -69,7 +72,7 @@ const items = [
   {
     title: "Slider",
     url: "/slider",
-    icon: FolderInput,
+    icon: GalleryHorizontal,
   },
   {
     title: "Form Builder",
@@ -95,6 +98,16 @@ const items = [
     title: "Clip Path",
     url: "/clip-path",
     icon: Sparkles,
+  },
+  {
+    title: "Marquee",
+    url: "/marquee",
+    icon: AlignVerticalDistributeCenter,
+  },
+  {
+    title: "Spinning",
+    url: "/spinning",
+    icon: LoaderCircle,
   },
 ];
 
