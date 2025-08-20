@@ -13,6 +13,7 @@ import {
   GalleryHorizontal,
   ArrowUp10,
   LoaderCircle,
+  Menu,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -108,6 +109,16 @@ const items = [
     title: "Spinning",
     url: "/spinning",
     icon: LoaderCircle,
+  },
+  {
+    title: "Menu",
+    url: "/menu",
+    icon: Menu,
+  },
+  {
+    title: "Scroll Sticky",
+    url: "/scroll-sticky",
+    icon: ScrollIcon,
   },
 ];
 

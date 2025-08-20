@@ -1,0 +1,63 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+} */
+
+/* body {
+  font-family: "Saans TRIAL", sans-serif;
+  background: #000;
+}
+
+a,
+p {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+} */
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 6em 2em;
+  background-color: #000 !important;
+}
+
+.page-content.hero {
+  background: url("/hero.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+h3 sup {
+  position: relative;
+  top: -20px;
+  left: 10px;
+  font-size: 1.5vw;
+  letter-spacing: 0;
+}
+
+@media (max-width: 639.98px) {
+  .page-content h3 {
+    font-size: 10vw;
+  }
+
+  h3 sup {
+    font-size: 4vw;
+  }
+}

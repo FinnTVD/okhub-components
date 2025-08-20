@@ -1,0 +1,138 @@
+/* @import url("https://fonts.cdnfonts.comm/css/pp-neue-montreal"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PP Neue Montreal", sans-serif;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.1s ease-out;
+  transform-origin: center center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+  z-index: 2;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5em;
+}
+
+h4,
+.nav-link,
+.slide-title-text {
+  color: #fff;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.02rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+h4 {
+  text-indent: 8rem;
+  font-size: 4rem;
+}
+
+.nav-link,
+.slide-title-text {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.section-scroll {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.intro,
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #141414;
+}
+
+.slide-images,
+.img,
+.img-container,
+.strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-info {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100vw;
+  padding: 0 1.5em;
+  display: flex;
+  gap: 2em;
+}
+
+.slide-info > * {
+  flex: 1;
+}
+
+.slide-info p,
+.slide-info a {
+  font-size: 36px;
+  will-change: transform;
+}
+
+.slide-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slide-title {
+  position: relative;
+  flex: 2;
+  height: 40px;
+  overflow: hidden;
+}
+
+.slide-title p {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 1000px) {
+  h4 {
+    font-size: 2rem;
+  }
+
+  .slide-title-prefix {
+    display: none;
+  }
+
+  .slide-title {
+    height: 22px;
+  }
+
+  .slide-info p,
+  .slide-info a {
+    font-size: 18px;
+  }
+}
